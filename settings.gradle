@@ -1,0 +1,19 @@
+pluginManagement {
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.id == "kotlin-multiplatform") {
+                useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlin_version}")
+            }
+        }
+    }
+}
+rootProject.name = 'logger-bundle'
+
+include ':demoandroid'
+include ':logger-api'
+include ':demojs'
+
+enableFeaturePreview('GRADLE_METADATA')
+
+
+
