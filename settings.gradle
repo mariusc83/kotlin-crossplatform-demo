@@ -10,7 +10,7 @@ pluginManagement {
 rootProject.name = 'logger-bundle'
 
 include ':demoandroid'
-include ':logger-api'
+include ':utils-api'
 include ':demojs'
 
 enableFeaturePreview('GRADLE_METADATA')
